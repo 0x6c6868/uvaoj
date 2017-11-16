@@ -1,16 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 
 char s[] = "`1234567890-=QWERTYUIOP[]\\ASDFGHJKL;'ZXCVBNM,./";
 
-int main(void)
-{
-        char c;
-        while((c=getchar()) != EOF){
-                int i;
-                for(i=1; s[i] && s[i]!=c; i++);
+int main(void) {
+  char c;
+  while ((c = getchar()) != EOF) {
+    int i;
+    for (i = 1; s[i] && s[i] != c; i++)
+      ;
 
-                if(s[i]) putchar(s[i-1]);
-                else putchar(c);
-        }
-        return 0;
+    if (s[i])
+      putchar(s[i - 1]);
+    else
+      putchar(c);
+  }
+  return 0;
 }

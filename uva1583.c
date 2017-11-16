@@ -1,25 +1,29 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
 
 #define maxn 100005
 int ans[maxn];
 
-int main(void){
+int main(void) {
 
-        int n, m;
-        memset(ans, 0, sizeof(ans));
-        for(m=1;m<maxn;m++){
-                int x=m, y=m;
-                while(x>0) { y += x%10; x/=10; }
-                if(ans[y] == 0 || m < ans[y]) ans[y] = m;
-        }
+  int n, m;
+  memset(ans, 0, sizeof(ans));
+  for (m = 1; m < maxn; m++) {
+    int x = m, y = m;
+    while (x > 0) {
+      y += x % 10;
+      x /= 10;
+    }
+    if (ans[y] == 0 || m < ans[y])
+      ans[y] = m;
+  }
 
-        int T;
-        scanf("%d", &T);
-        while(T--){
-                scanf("%d", &n);
-                printf("%d\n", ans[n]);
-        }
+  int T;
+  scanf("%d", &T);
+  while (T--) {
+    scanf("%d", &n);
+    printf("%d\n", ans[n]);
+  }
 
-        return 0;
+  return 0;
 }

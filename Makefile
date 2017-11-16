@@ -9,3 +9,12 @@ endef
 
 all:
 	$(call compile_c_file)
+
+define format_c_file
+@for file in $(FILES); do \
+( echo "clang-format -i $$file" && clang-format -i $$file ) \
+done;
+endef
+
+format:
+	$(call format_c_file)

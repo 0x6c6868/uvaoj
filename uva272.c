@@ -1,12 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(void){
-    int c, q=1;
+int main(void) {
+  int c, q = 1;
 
-    while((c=getchar()) != EOF){
-        if(c == '"') {printf("%s", q ? "``":"''"); q=!q;}
-        else printf("%c", c);
-    }
+  while ((c = getchar()) != EOF) {
+    if (c == '"') {
+      printf("%s", q ? "``" : "''");
+      q = !q;
+    } else
+      printf("%c", c);
+  }
 
-    return 0;
+  return 0;
 }
