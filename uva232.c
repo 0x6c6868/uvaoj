@@ -29,6 +29,8 @@ int main(void) {
       getchar();
     }
 
+    if (T != 0)
+      putchar('\n');
     printf("puzzle #%d:\n", ++T);
 
     printf("Across\n");
@@ -36,14 +38,7 @@ int main(void) {
       for (int j = 0; j < b; j++) {
         if (m[i][j] != 0) {
 
-          if (m[i][j] < 10) {
-            putchar(' ');
-            putchar(' ');
-          } else {
-            putchar(' ');
-          }
-
-          printf("%d.", m[i][j]);
+          printf("%3d.", m[i][j]);
           while (j < b) {
             if (s[i][j] != '*') {
               putchar(s[i][j++]);
@@ -64,15 +59,7 @@ int main(void) {
           if (i > 0 && s[i - 1][j] != '*')
             continue;
 
-          if (m[i][j] < 10) {
-            putchar(' ');
-            putchar(' ');
-          } else {
-            putchar(' ');
-          }
-
-          printf("%d.", m[i][j]);
-
+          printf("%3d.", m[i][j]);
           int tmp_i = i;
           while (tmp_i < a) {
             if (s[tmp_i][j] != '*') {
@@ -81,14 +68,10 @@ int main(void) {
               break;
             }
           }
-
           putchar('\n');
         }
       }
     }
-
-    putchar('\n');
   }
-
   return 0;
 }
