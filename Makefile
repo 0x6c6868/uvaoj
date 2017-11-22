@@ -1,5 +1,5 @@
 CC:=gcc
-FILES=`ls *.c`
+FILES=`ls */*.c`
 
 define compile_c_file
 @for file in $(FILES); do \
