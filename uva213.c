@@ -19,7 +19,7 @@ int readint(int c) {
 }
 
 int readcodes() {
-  memset(code, 0, sizeof(int));
+  memset(code, 0, sizeof(code));
   code[1][0] = readchar();
   for (int len = 2; len <= 7; len++) {
     for (int i = 0; i < (1 << len) - 1; i++) {
