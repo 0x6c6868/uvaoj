@@ -1,21 +1,15 @@
 import queue
 
-def my_input():
-    try:
-        return input()
-    except:
-        return False
-
 def main():
     task_no=0
     while True:
-        q_n = int(my_input())
-        if int(q_n) == 0:
+        q_n = int(input())
+        if q_n == 0:
             return
 
         team = dict()
         for i in range(q_n):
-            tmp = my_input()
+            tmp = input()
             tmp = tmp.split()
             n = int(tmp[0])
             for j in range(n):
@@ -26,7 +20,7 @@ def main():
         q = queue.Queue()
         q2 = [queue.Queue() for _ in range(q_n)]
         while True:
-            tmp = my_input()
+            tmp = input()
             if tmp == "STOP":
                 break
             elif tmp == "DEQUEUE":

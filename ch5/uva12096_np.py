@@ -1,16 +1,10 @@
-def my_input():
-    try:
-        return input()
-    except:
-        return False
-
 def main():
-    oper_n = int(my_input())
+    oper_n = int(input())
     for _ in range(oper_n):
-        n = int(my_input())
+        n = int(input())
         rst = list()
         for _ in range(n):
-            s = my_input()
+            s = input()
             if s == "PUSH":
                 rst.append(set())
 
