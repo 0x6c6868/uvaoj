@@ -1,5 +1,5 @@
 /**
- * http://blog.csdn.net/crazysillynerd/article/details/43339157s
+ * http://blog.csdn.net/crazysillynerd/article/details/43339157
  */
 
 #include <math.h>
