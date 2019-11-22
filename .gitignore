@@ -1,2 +1,6 @@
 uva*
 !*.cc
+
+!*.java
+.idea
+*.class
