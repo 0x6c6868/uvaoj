@@ -22,9 +22,9 @@ public class uva1583 {
     public static void main(String[] args) {
         init();
         Scanner sc = new Scanner(System.in);
-        int count = sc.nextInt();
+        int count = Integer.valueOf(sc.nextLine());
         while (count > 0) {
-            int num = sc.nextInt();
+            int num = Integer.valueOf(sc.nextLine());
             System.out.println(ans[num]);
             count--;
         }
