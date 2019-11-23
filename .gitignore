@@ -1,6 +1,7 @@
 uva*
 !*.cc
 
+output
 !*.java
 .idea
 *.class
