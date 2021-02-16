@@ -1,6 +1,7 @@
 # uvaoj
 * [算法竞赛入门经典(第2版)](https://book.douban.com/subject/25902102/)
 * [算法竞赛入门经典(训练指南)](https://book.douban.com/subject/20254543/)
+* [ACM国际大学生程序设计竞赛](https://book.douban.com/subject/20474545/)
 
 # 进度
 
@@ -21,3 +22,9 @@
 	| 总计 | 47 | 419 | 11.21% |
 
 * [算法竞赛入门经典(训练指南)](https://book.douban.com/subject/20254543/)
+
+TODO
+
+* [ACM国际大学生程序设计竞赛](https://book.douban.com/subject/20474545/)
+
+TODO
